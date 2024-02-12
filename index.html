@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Library Management System</h1>
+    <div id="alertArea"></div>
+    <div id="borrowReturnAlertArea"></div> 
+
+    <div class="container"> 
+        <section id="searchBookSection">
+            <h2><i class="fas fa-search"></i> Search Book</h2>
+            <input type="text" id="searchInput" placeholder="Enter book title">
+            <div id="searchAlertArea"></div>
+            <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
+            <ul id="searchResults"></ul>
+        </section>
+        <section id="bookListSection">
+            <h2><i class="fas fa-book"></i> Book List</h2>
+            <ul id="bookList"></ul>
+        </section>
+
+        <section id="addBookSection" class="flex-container">
+            <h2><i class="fas fa-plus"></i> Add New Book</h2>
+            <label for="bookId">Book ID<span>*</span></label>
+            <input type="text" id="bookId" placeholder="Book ID" required>
+            <label for="bookTitle">Book Title<span>*</span></label>
+            <input type="text" id="bookTitle" placeholder="Book Title" required>
+            <label for="authorName">Author Name<span>*</span></label>
+            <input type="text" id="authorName" placeholder="Author Name" required>
+            <div id="addBookAlertArea"></div>
+            <button id="addBookBtn" class="add-book-btn">
+                <span><i class="fas fa-plus-circle"></i></span> 
+                <span>Add</span>
+                <span>Book</span>
+            </button>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

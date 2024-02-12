@@ -1,0 +1,251 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f7ff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
+    font-size: 36px;
+    color: #007bff;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+input[type="text"],
+button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#addBookSection,
+#searchBookSection {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+}
+
+#addBookSection input[type="text"],
+#searchBookSection input[type="text"] {
+    width: calc(100% - 80px);
+}
+
+#addBookBtn,
+#searchBtn {
+    width: 100px;
+}
+
+
+
+#bookList {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#bookList li {
+    flex-basis: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#bookList li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#searchResults {
+    list-style-type: none;
+    padding: 0;
+}
+
+#searchResults li {
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#searchResults li:hover {
+    background-color: #f0f0f0;
+}
+
+.home-icon,
+.contact-us {
+    margin: 0 10px; 
+}
+
+.home-icon i,
+.contact-us a {
+    margin-right: 5px; 
+}
+
+.contact-us {
+    margin-left: auto; 
+}
+
+.contact-us a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-us a:hover {
+    text-decoration: underline;
+}
+
+h1{
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+}
+
+
+
+.alert {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+@media (max-width: 768px) {
+    .alert {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .alert {
+        font-size: 12px;
+    }
+}
+
+#addBookSection {
+    margin-top: 20px;
+}
+
+#addBookSection h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+#addBookSection label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#addBookSection label span {
+    color: red;
+}
+
+#addBookSection input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#addBookAlertArea {
+    margin-bottom: 10px;
+}
+
+#addBookBtn {
+    width: 150px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#addBookBtn:hover {
+    background-color: #0056b3;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-book-btn {
+    display: flex;
+    align-items: center;
+}
+
+.add-book-btn span {
+    margin-left: 5px; 
+}
+
+.returnButton {
+    background-color: #d9ba09;
+}
+
+.returnButton:hover {
+    background-color: #41e80e;
+}
